@@ -30,7 +30,7 @@ class CoolerController:
         sets = self.sets
         speed = 0
 
-        for i in range(sets):
+        for i in range(len(sets)):
             tuple = sets[i]
             speed += trapeze(temperature, tuple[0], tuple[1], tuple[2], tuple[3]) * (i + 1) * self.delta
 

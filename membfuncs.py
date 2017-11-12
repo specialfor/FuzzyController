@@ -22,4 +22,4 @@ def trapeze(value, left, left_trap, right_trap, right):
     elif left_trap <= value <= right_trap:
         return 1
     elif right_trap < value <= right:
-        return (value - right) / (right - right_trap)
+        return (value - right_trap) / (right - right_trap)
